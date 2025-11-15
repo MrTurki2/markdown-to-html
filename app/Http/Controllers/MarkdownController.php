@@ -80,7 +80,7 @@ class MarkdownController extends Controller
      */
     public function test2()
     {
-        return view('test2');
+        return view('lab.test2');
     }
 
     /**
@@ -136,7 +136,15 @@ class MarkdownController extends Controller
      */
     public function test3()
     {
-        return view('test3');
+        return view('lab.test3');
+    }
+
+    /**
+     * Test 4: عرض صفحة محرر Quill WYSIWYG
+     */
+    public function test4()
+    {
+        return view('lab.test4');
     }
 
     /**
@@ -173,7 +181,7 @@ class MarkdownController extends Controller
      */
     public function test5()
     {
-        return view('test5');
+        return view('lab.test5');
     }
 
     /**
@@ -333,7 +341,7 @@ class MarkdownController extends Controller
      */
     public function test6()
     {
-        return view('test6');
+        return view('lab.test6');
     }
 
     /**
@@ -484,7 +492,7 @@ Write the report in Markdown format:";
      */
     public function test8()
     {
-        return view('test8');
+        return view('lab.test8');
     }
 
     /**
@@ -652,7 +660,7 @@ Write the report in Markdown format:";
     // Test 9
     public function test9()
     {
-        return view('test9');
+        return view('lab.test9');
     }
 
     public function test9GeneratePdf(Request $request)
