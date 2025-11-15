@@ -137,9 +137,25 @@
         </div>
     </div>
 
+    <!-- Quick Access to Experiments -->
+    <div class="bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg shadow-lg p-6 text-white mb-6">
+        <div class="flex items-center justify-between">
+            <div>
+                <h2 class="text-2xl font-bold mb-2">🧪 مجموعة التجارب المتقدمة</h2>
+                <p class="opacity-90">اكتشف 8 تجارب شاملة مع مميزات مختلفة للتحويل والتصدير</p>
+            </div>
+            <a href="{{ route('lab.experiments') }}" class="bg-white text-purple-600 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition flex items-center gap-2">
+                <span>عرض جميع التجارب</span>
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+
     <!-- Experiments Section -->
     <div class="bg-white rounded-lg shadow-lg p-6">
-        <h2 class="text-2xl font-bold text-gray-800 mb-4">🔬 التجارب المتاحة</h2>
+        <h2 class="text-2xl font-bold text-gray-800 mb-4">🔬 التجارب السريعة</h2>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
             <a href="#" onclick="experiment('performance'); return false;" class="block p-4 border-2 border-gray-200 rounded-lg hover:border-blue-500 hover:shadow-md transition">
@@ -172,10 +188,10 @@
                 <p class="text-sm text-gray-600">اختبار plugins متقدمة</p>
             </a>
 
-            <a href="#" onclick="experiment('export'); return false;" class="block p-4 border-2 border-gray-200 rounded-lg hover:border-blue-500 hover:shadow-md transition">
-                <div class="text-3xl mb-2">📥</div>
-                <h3 class="font-bold mb-1">التصدير</h3>
-                <p class="text-sm text-gray-600">PDF, DOCX, وأكثر</p>
+            <a href="{{ route('lab.experiments') }}" class="block p-4 border-2 border-purple-300 bg-purple-50 rounded-lg hover:border-purple-500 hover:shadow-md transition">
+                <div class="text-3xl mb-2">🚀</div>
+                <h3 class="font-bold mb-1 text-purple-700">المزيد من التجارب</h3>
+                <p class="text-sm text-purple-600">8 تجارب متقدمة متاحة</p>
             </a>
         </div>
     </div>
